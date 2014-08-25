@@ -1,0 +1,127 @@
+body {
+	font-family: optima;
+}
+#title {
+	padding: 5px;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+.marvel {
+	color: red;
+}
+
+.dc {
+	color: blue;
+}
+
+#subtitle {
+	font-size: 16px;
+}
+
+.axis path,
+
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: optima;
+    font-size: 11px;
+}
+
+.hidden {
+    display: none;
+}
+
+.selectedBar {
+	stroke: black;
+	stroke-width: 2;
+}
+
+#headerTable {
+	width:880px;
+	left: 0;
+	right:0;
+	margin: 0 auto;
+}
+
+#menu {
+	padding-left: 15px; 
+	/*line-height: 150px;*/
+}
+
+#menuTable {
+	width: 500px;
+}
+
+.menuItems {
+	font-family: optima;
+	font-size: 18px;
+	color: grey;
+}
+
+.explain {	
+	font-family: optima;
+	color: black;
+}
+
+.explain.main{
+	font-size: 20px;
+}
+
+.hovered {
+	font-weight: bold;
+}
+
+.selected {
+	font-weight: bold;
+	color: black !important;
+}
+
+#intro {
+	border-width: 2px;
+	background-color: gainsboro;
+	width: 50%;
+	margin: 0 auto;
+	box-shadow: 10px 10px 5px #888888;
+	font-family: optima;
+	z-index: 999;
+	position: absolute;
+	left: 0;
+	right: 0;
+	border-radius: 25px;
+	padding:10px;
+}
+
+#header {
+	width: 900;
+	padding: 10px;
+	left: 0;
+	right: 0;
+
+}
+
+#visualization {
+	width: auto;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+#vis {
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+#wrapper {
+	width: 900;
+	left: 0;
+	right: 0;
+}

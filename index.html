@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<div class = "hidden" id = "visualization">
+
+
+<div id = "header">
+<table id = "headerTable">
+<tr>
+	<td>
+		<div id = "title">
+			<h1><strong class = "marvel">Marvel</strong> vs. <strong class = "dc">DC</strong></h1>
+		</div>
+	</td>
+
+	<td>
+		<div id = "menu">
+			<table id = "menuTable">
+				<tr>
+					<td class = "explain main">Showing gross earnings for: </td>
+					<td class = "selected menuItems" id = "adjusted">Total (adjusted)</td>
+					<td class = "menuItems" id = "worldwide">Total</td>
+				</tr>
+				<tr>
+					<td class = "explain sub">(Select option to filter)</td>
+					<td class = "menuItems" id = "domestic">Domestic</td>
+					<td class = "menuItems" id = "foreign">Foreign</td>
+				</tr>
+			</table>
+			</div>	
+	</td>
+
+</table> <!-- close header table -->
+</div> <!-- close header div -->
+<div id = "vis">
+</div>
+</div> <!-- closes visualization div -->
+
+<div id = "intro"> 
+	<h1><strong class = "marvel">Marvel</strong> Vs. <strong class = "dc">DC</strong> in the Theater.</h1>
+	
+	<p id = "subtitle">Based on <a href = "http://www.theverge.com">The Verge</a> article: <a href= "http://www.theverge.com/2014/8/22/6056617/marvels-movie-business-is-crushing-dcs-and-its-not-close"> Marvel's movie business is crushing DC's and it's not close.</a></p>
+	<hr>
+	<p>The Verge is my most frequented website for all things gadget and culture related. When they came out with an interesting data driven article about the performance in the theaters of Marvel's movie adaptations compared to DC's I knew I needed to visualize it.<br><br>
+	The embedded spreadsheet they included in the article was awesome but made it hard to understand the themes in the data. I hope that this visualization will help make them more apparent. <br><br>
+	I hope you enjoy and of course if you have any questions/comments or sage life advice tweet at me @NicholasStrayer.  </p>
+
+	<h3>How to use</h3>
+	<ul>
+		<li>Click the different menu options in the upper right corner to filter the data by type:</li>
+			<ul>
+				<li><strong>"Total (adjusted)"</strong> is the worldwide gross in dollars adjusted for inflation.</li>
+				<li><strong>"Total"</strong> is the worldwide gross <strong>not</strong> adjusted for inflation.</li>
+				<li><strong>"Domestic"</strong> gross in the United States.</li>
+				<li><strong>"Foreign"</strong> gross outside of the United States.</li>
+			</ul>
+	</ul>
+
+	<h3>Resources:</h3>
+	<ul>
+		<li>Dataset: <a href = "http://www.theverge.com/2014/8/22/6056617/marvels-movie-business-is-crushing-dcs-and-its-not-close"> TheVerge.com</a> </li>
+		<li><a href = "http://d3js.org/"> d3.js </a></li>
+	</ul>
+	
+	<p id = "continueText"><strong>Click here to continue on to the visualization!</strong>
+	</p>
+</div>
+
+<script src="script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53965157-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
